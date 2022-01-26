@@ -1,0 +1,106 @@
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--preto);
+  font-family: "Times New Roman", Times, serif;
+}
+header .container {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+  margin-left: 5%;
+}
+header nav {
+  margin-right: 5%;
+}
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+header nav a:hover {
+  color: rgb(139, 139, 139);
+}
+/* Filme Principal */
+main .filme-principal {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../1.jpg");
+  height: 900px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .container {
+  margin-left: 5%;
+}
+main .container .titulo {
+  color: white;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+main .container .descricao {
+  color: white;
+  max-width: 70%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+main .container .butao {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+main .container .butao:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+main .container .butao i {
+  margin-right: 8px;
+}
+
+/* Carrossel */
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin-left: 10px;
+}
+
+.carrossel-filmes {
+  margin-top: 10px;
+}
+.carrossel-filmes h3 {
+  margin-left: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
